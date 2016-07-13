@@ -1,10 +1,12 @@
-describe('angularjs homepage todo list', function() {
-  it('should add a todo', function() {
+// PTOR
+describe('Search', function() {
+  it('should perform a search', function() {
     browser.ignoreSynchronization = true; //ignore that this isn't an angular app
     browser.get('https://www.homeaway.com/');
-    var search = element.all(by.css('#searchKeywords'));
-    search.sendKeys('Austin, TX');
-    console.log(search.isDisplayed();
+    var searchBox = element.all(by.css('#searchKeywords'));
+    searchBox.sendKeys('Austin, TX');
+    // console.log(searchBox);
+    // console.log(searchBox.isDisplayed());
     browser.sleep(10000);
   });
 });

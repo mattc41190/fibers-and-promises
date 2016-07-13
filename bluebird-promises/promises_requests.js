@@ -1,3 +1,8 @@
+/*
+Promises are objects that encapsulate an asynchronous process providing standardized callback assignment and processing.
+Promises work within the standard Node.js event loop thread(s).
+*/
+
 var Promise = require('bluebird');
 var req = require('request');
 

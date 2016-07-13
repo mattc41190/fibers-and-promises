@@ -1,3 +1,9 @@
+/*
+Fibers are threads outside the standard Node.js event loop thread(s).
+Futures are the mechanism by which you can execute long running synchronous code.
+Futures are the primary abstraction layer to fibers to execute synchronous code in a fiber.
+*/
+
 var Future = require('fibers/future');
 var req = require('request');
 
