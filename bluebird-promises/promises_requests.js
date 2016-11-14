@@ -27,5 +27,8 @@ promiseApiCall('http://httpbin.org/status/418')
 .then(function(body){
     console.log(body);
 })
+.catch(function(error) {
+    console.log('Error -> ', error);
+})
 
 console.log("After Promise Call");

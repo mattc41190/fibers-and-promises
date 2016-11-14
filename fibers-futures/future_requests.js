@@ -8,8 +8,8 @@ var Future = require('fibers/future');
 var req = require('request');
 
 function getData(url, callback){
-    req.get({url:url,
-        json: true}, function(err, res, body){
+    req.get(
+        { url: url, json: true }, function(err, res, body) {
         return callback(null, body);
     });
 }

@@ -2,6 +2,9 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    exclude: [
+       'test/spec/search.spec.js',
+   ],
     maxInstances: 10,
     capabilities: [{
         maxInstances: 5,
